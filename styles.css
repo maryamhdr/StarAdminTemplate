@@ -35,6 +35,10 @@ body {
     align-items: center
 }
 
+.brand:hover {
+    cursor: pointer;
+}
+
 .nav-left-side {
     height: 100%;
     margin-left: 40px;
@@ -70,7 +74,21 @@ body {
 }
 
 .nav-right-side .nav-item {
-    padding: 0 8px
+    padding: 0 8px;
+    position: relative;
+}
+
+.tag {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ed4631;
+    font-size: 14px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 32px;
+    right: 10px;
 }
 
 .avatar {
