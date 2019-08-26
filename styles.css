@@ -97,7 +97,7 @@ body {
 }
 
 .nav-right-side .nav-item {
-    padding: 0 8px;
+    padding: 0 5px;
     position: relative;
 }
 
@@ -345,12 +345,16 @@ body {
 .side-nav ul li:hover {
     background: #f1f6ff;
     color: #4a4949;
-    
+
 }
 
 .side-nav ul li:first-child {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 26px 36px 19.008px;
+    cursor: default !important
 }
 
 
@@ -372,6 +376,46 @@ i.menu-arrow {
     cursor: default !important
 }
 
+.side-nav-avatar {
+    width: 70px;
+    height: 70px
+}
+
+.avatar-text-wrapper {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.avatar-text-wrapper p.name {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: auto
+}
+
+.avatar-text-wrapper p.designation {
+    color: #8d9498;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: auto
+}
+
+.avatar-text-wrapper .profile-badge {
+    color: #ffffff;
+    background-color: #58d8a3;
+    margin-top: 16px;
+    padding: 4px 6px;
+    border: 1px solid #58d8a3;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    cursor: auto
+}
+
 
 .main-panel {
     width: calc(100% - 255px);
@@ -382,6 +426,14 @@ i.menu-arrow {
 @media screen and (max-width: 992px) {
     .brand {
         width: 177px;
+    }
+
+    .side-nav {
+        display: none
+    }
+
+    .main-panel {
+        width: 100%
     }
 }
 
