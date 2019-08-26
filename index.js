@@ -3,10 +3,19 @@
 var inboxDropdown = document.getElementById("inboxDropdown");
 var notifDropdown = document.getElementById("notifDropdown");
 
-function openInboxDropdown() {
-    inboxDropdown.style.display = "block"
+function openInboxDropdown(event) {
+    event.stopPropagation();
+    inboxDropdown.style.display = "block";
+    notifDropdown.style.display = "none";
 }
 
-function openNotifDropdown() {
-    notifDropdown.style.display = "block"
+function openNotifDropdown(event) {
+    event.stopPropagation();
+    notifDropdown.style.display = "block";
+    inboxDropdown.style.display = "none";
 }
+
+window.onclick = function(event) {
+    inboxDropdown.style.display = "none";
+    notifDropdown.style.display = "none";
+  }
