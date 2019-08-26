@@ -106,6 +106,7 @@ body {
 }
 
 .inbox-dropdown {
+    display: none;
     width: 360px;
     height: 275px;
     padding: 8px 0;
@@ -122,6 +123,38 @@ body {
     z-index: 1000;
     top: 60px;
     right: 16px
+}
+
+.notif-dropdown {
+    display: none;
+    width: 160px;
+    padding: 8px 0;
+    box-shadow: 0 0 13px -3px rgba(0,0,0,.1);
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: dropdownAnimation;
+    background-clip: padding-box;
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(243, 243, 243);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    right: 8px
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-30px,0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: none;
+        transform: translateZ(0);
+    }
 }
 
 .drp-header {
@@ -196,4 +229,25 @@ body {
 
 .bg-info {
     background-color: #745af2 !important
+}
+
+.drp-item-text-container {
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    color: #212529;
+    display: flex;
+    flex-direction: column
+}
+
+.drp-item-title {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 8px;
+    line-height: 1.2
+}
+
+.drp-item-text {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1
 }
