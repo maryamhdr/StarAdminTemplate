@@ -43,8 +43,8 @@ body {
     display: none;
     height: 100%;
     cursor: pointer;
-    color: hsla(0,0%,100%,.5);
-    border-color: hsla(0,0%,100%,.1);
+    color: hsla(0, 0%, 100%, .5);
+    border-color: hsla(0, 0%, 100%, .1);
     outline: 0;
     padding: 4px 12px;
     font-size: 36px;
@@ -52,7 +52,7 @@ body {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 4px
-    /* display: inline-block;
+        /* display: inline-block;
     text-align: center;
     align-items: flex-start; */
 }
@@ -133,7 +133,7 @@ body {
     width: 360px;
     height: 275px;
     padding: 8px 0;
-    box-shadow: 0 0 13px -3px rgba(0,0,0,.1);
+    box-shadow: 0 0 13px -3px rgba(0, 0, 0, .1);
     animation-duration: 0.25s;
     animation-fill-mode: both;
     animation-name: dropdownAnimation;
@@ -152,7 +152,7 @@ body {
     display: none;
     width: 160px;
     padding: 8px 0;
-    box-shadow: 0 0 13px -3px rgba(0,0,0,.1);
+    box-shadow: 0 0 13px -3px rgba(0, 0, 0, .1);
     animation-duration: 0.25s;
     animation-fill-mode: both;
     animation-name: dropdownAnimation;
@@ -170,9 +170,9 @@ body {
 @keyframes dropdownAnimation {
     0% {
         opacity: 0;
-        transform: translate3d(0,-30px,0);
+        transform: translate3d(0, -30px, 0);
     }
-    
+
     100% {
         opacity: 1;
         transform: none;
@@ -275,14 +275,52 @@ body {
     line-height: 1
 }
 
-@media screen and (max-width: 992px){
+.nav-menu {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    background: linear-gradient(to right, #2392e7, #38bdfb);
+    padding: 0;
+    color: white;
+    overflow: auto;
+    transition: 0.3s
+}
+
+.nav-menu-list {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column
+}
+
+.nav-menu-list li {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.nav-menu-list li i {
+    margin-right: 8px
+}
+
+.nav-menu-list li:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px) {
     .brand {
         width: 177px;
     }
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .brand {
         float: right;
         width: 255px
