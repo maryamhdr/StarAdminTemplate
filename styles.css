@@ -78,12 +78,12 @@ body {
     position: relative;
 }
 
-.tag {
+.badge {
     width: 16px;
     height: 16px;
     display: inline-block;
     text-align: center;
-    background-color: #ed4631;
+    background-color: #ff0017;
     font-size: 14px;
     border-radius: 50%;
     position: absolute;
@@ -103,4 +103,97 @@ body {
 
 .nav-right-side:last-child {
     padding-right: 0
+}
+
+.inbox-dropdown {
+    width: 360px;
+    height: 275px;
+    padding: 8px 0;
+    box-shadow: 0 0 13px -3px rgba(0,0,0,.1);
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: dropdownAnimation;
+    background-clip: padding-box;
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(243, 243, 243);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    right: 16px
+}
+
+.drp-header {
+    padding: 11px 30px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 14px;
+    color: #212529;
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: center
+}
+
+.drp-header:hover {
+    color: #16181b;
+    background-color: #f8f9fa
+}
+
+.drp-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px 6px;
+    margin-left: 40px;
+    background-color: #ffc105;
+    color: #ffffff;
+    border-radius: 10rem
+}
+
+.drp-item {
+    padding: 11px 30px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 14px;
+    color: #212529;
+    display: flex;
+    flex-direction: row;
+}
+
+.drp-item:hover {
+    background-color: #f8f9fa;
+    color: #16181b
+}
+
+.drp-item:last-child {
+    border: none
+}
+
+.preview-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px
+}
+
+.preview-icon i {
+    padding: 0;
+    margin: 0
+}
+
+.bg-success {
+    background-color: #08d419 !important
+}
+
+.bg-warning {
+    background-color: #ffc105 !important
+}
+
+.bg-info {
+    background-color: #745af2 !important
 }
