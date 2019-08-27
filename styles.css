@@ -316,7 +316,6 @@ body {
 
 .main-container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 60px;
@@ -348,7 +347,7 @@ body {
 
 }
 
-.side-nav ul li:first-child {
+.side-nav ul li.profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,11 +357,12 @@ body {
 }
 
 
-.side-nav ul li:first-child:hover {
+.side-nav ul li.profile:hover {
     background-color: #ffffff
 }
 
 .side-nav ul li i {
+    width: 16px;
     margin-right: 20px
 }
 
@@ -414,6 +414,34 @@ i.menu-arrow {
     font-weight: 400;
     line-height: 1;
     cursor: auto
+}
+
+.side-nav-dropdown-list {
+    width: 100%;
+    list-style-type: none;
+    background-color: #f1f6ff;
+    color: #212529;
+    font-size: 16px;
+    padding: 0 0 0 36px;
+    overflow: hidden;
+}
+
+.side-nav-dropdown-list li {
+    color: #4a4949;
+    font-size: 14px;
+    padding: 12px 16px
+}
+
+.side-nav-dropdown-list li:hover {
+    color: #000000
+}
+
+.ui-components-drp {
+    height: 580;
+}
+
+.sample-pages-drp {
+    height: 190px;
 }
 
 

@@ -110,7 +110,7 @@
     <div class="main-container">
         <nav class="side-nav">
             <ul>
-                <li>
+                <li class="profile">
                     <div class="avatar side-nav-avatar"></div>
                     <div class="avatar-text-wrapper">
                         <p class="name">Richard V.Welsh</p>
@@ -120,8 +120,34 @@
                 </li>
                 <li><i class="fas fa-bars fa-fw"></i>Dashboard</li>
                 <li><i class="fab fa-telegram-plane fa-fw"></i>Widgets</li>
-                <li class="dropdown-btn"><i class="fas fa-crown fa-fw"></i>Sample Pages<i class="fas fa-sort-down" style="margin-left: auto; margin-right: 0; color: rgba(74,73,73,.5)"></i></li>
-                <li class="dropdown-btn"><i class="far fa-gem fa-fw"></i>UI Components<i class="fas fa-sort-down" style="margin-left: auto; margin-right: 0; color: rgba(74,73,73,.5)"></i></li>
+                <li class="dropdown-btn" onclick="habdleDropdown(1)">
+                    <i class="fas fa-crown fa-fw"></i>Sample Pages<i class="fas fa-sort-down"
+                        style="margin-left: auto; margin-right: 0; color: rgba(74,73,73,.5)"></i>
+                </li>
+                <ul class="side-nav-dropdown-list sample-pages-drp" id="samplePagesDropdown">
+                    <li>login</li>
+                    <li>register</li>
+                    <li>404</li>
+                    <li>500</li>
+                </ul>
+                <li class="dropdown-btn" onclick="habdleDropdown(2)">
+                    <i class="far fa-gem fa-fw"></i>UI Components<i class="fas fa-sort-down"
+                        style="margin-left: auto; margin-right: 0; color: rgba(74,73,73,.5)"></i>
+                </li>
+                <ul class="side-nav-dropdown-list ui-components-drp" id="uiComponentsDropdown">
+                    <li>Alerts</li>
+                    <li>Button</li>
+                    <li>Badges</li>
+                    <li>Breadcrumbs</li>
+                    <li>Carousel</li>
+                    <li>Dropdowns</li>
+                    <li>Typography</li>
+                    <li>Paginations</li>
+                    <li>Tooltips</li>
+                    <li>Progress</li>
+                    <li>Tabs</li>
+                    <li>Modals</li>
+                </ul>
                 <li><i class="fas fa-table fa-fw"></i>Tables</li>
                 <li><i class="fas fa-gift fa-fw"></i>Icons</li>
                 <li><i class="fas fa-list-alt fa-fw"></i>Forms</li>
