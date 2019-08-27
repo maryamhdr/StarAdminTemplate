@@ -342,7 +342,7 @@ body {
 }
 
 .side-nav ul li:hover {
-    background: #f1f6ff;
+    background: #f1f6ff !important;
     color: #4a4949;
 
 }
@@ -424,6 +424,7 @@ i.menu-arrow {
     font-size: 16px;
     padding: 0 0 0 36px;
     overflow: hidden;
+    transition: 0.3s
 }
 
 .side-nav-dropdown-list li {
@@ -437,11 +438,11 @@ i.menu-arrow {
 }
 
 .ui-components-drp {
-    height: 580;
+    height: 0;
 }
 
 .sample-pages-drp {
-    height: 190px;
+    height: 0
 }
 
 
