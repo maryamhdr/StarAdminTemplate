@@ -434,7 +434,7 @@ i.menu-arrow {
 }
 
 .side-nav-dropdown-list li:hover {
-    color: #000000
+    color: #000000 !important
 }
 
 .ui-components-drp {
@@ -448,7 +448,34 @@ i.menu-arrow {
 
 .main-panel {
     width: calc(100% - 255px);
-    background-color: #f6f8fa
+    background-color: #f6f8fa;
+    padding: 24px 27.2px
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.card {
+    max-width: 25%;
+    width: 100%;
+    min-height: 1px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    position: relative
+}
+
+.card .card-body {
+    padding: 1.88rem 1.81rem;
+    flex: 1 1 auto;
+    background-color: #ffffff
 }
 
 
@@ -483,5 +510,17 @@ i.menu-arrow {
 
     .menu-icon {
         display: inline-block
+    }
+
+    .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
