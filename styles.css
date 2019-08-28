@@ -464,7 +464,7 @@ i.menu-arrow {
     width: 100%;
     min-height: 1px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: stretch;
     padding-right: 10px;
     padding-left: 10px;
@@ -475,9 +475,71 @@ i.menu-arrow {
 .card .card-body {
     padding: 1.88rem 1.81rem;
     flex: 1 1 auto;
-    background-color: #ffffff
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
+.card-content {
+    vertical-align: middle;
+    position: relative;
+}
+
+.card-content .card-icon {
+    float: left;
+    font-size: 36px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.card-icon i {
+    padding: 0;
+    margin: 0
+}
+
+.color-success {
+    color: #69d9a4
+}
+
+.color-warning {
+    color: #ffc105
+}
+
+.color-info {
+    color: #745af2
+}
+
+.color-danger {
+    color: #ff0017
+}
+
+.card-content .card-info {
+    float: right !important;
+    text-align: right;
+    color: #212529
+}
+
+.card-muted-text {
+    margin-top: 1rem !important;
+    color: #c2c2c2 !important
+}
+
+.card-info p {
+    display: block;
+    font-size: .88rem;
+    padding: 0
+}
+
+.card-info h3 {
+    text-transform: capitalize;
+    font-weight: 700 !important;
+    font-size: 1.56rem
+}
 
 @media screen and (max-width: 992px) {
     .brand {
