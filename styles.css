@@ -359,7 +359,7 @@ body {
 
 
 .side-nav ul li.profile:hover {
-    background-color: #ffffff
+    background-color: #ffffff !important
 }
 
 .side-nav ul li i {
@@ -512,7 +512,7 @@ i.menu-arrow {
 }
 
 .color-success {
-    color: #69d9a4
+    color: #58d8a3
 }
 
 .color-warning {
@@ -586,9 +586,97 @@ th {
     font-weight: 500;
     border-top: 0;
     font-size: .875rem;
+    font-weight: 700;
     line-height: 1;
     vertical-align: bottom;
-    padding: .8375rem
+    padding: .8375rem;
+    text-align: left
+}
+
+td {
+    vertical-align: middle;
+    font-size: .875rem;
+    line-height: 1;
+    padding: .8375rem;
+    border-top: 1px solid #f3f3f3;
+    display: table-cell;
+    text-align: left
+}
+
+.table-badge {
+    display: inline-block;
+    border-radius: .25rem;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: .25rem .375rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    cursor: default
+}
+
+.badge-teal {
+    color: #ffffff;
+    background-color: #58d8a3;
+    border: 1px solid #58d8a3;
+}
+
+.badge-warning {
+    background-color: #ffc105;
+    color: #ffffff;
+    border: 1px solid #ffc105
+}
+
+.badge-danger {
+    color: #ffffff;
+    border: 1px solid #ff0017;
+    background-color: #ff0017
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer !important;
+    font-size: .875rem;
+    line-height: 1;
+    padding: .5rem .81rem;
+    border-radius: .1875rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    transition: .15s 
+}
+
+.btn-outline-success {
+    color: #08d419;
+    background-color: transparent;
+    background-image: none;
+    border-color: #08d419
+}
+
+.btn-outline-success:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #08d419
+}
+
+.btn-outline-danger {
+    color: #ff0017;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ff0017
+}
+
+.btn-outline-danger:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ff0017
+}
+
+a {
+    text-decoration: none
 }
 
 @media screen and (max-width: 992px) {
