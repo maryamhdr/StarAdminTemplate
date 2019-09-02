@@ -53,9 +53,6 @@ body {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 4px
-        /* display: inline-block;
-    text-align: center;
-    align-items: flex-start; */
 }
 
 .menu-icon i {
@@ -313,13 +310,11 @@ body {
     cursor: pointer;
 }
 
-
-
 .main-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .side-nav {
@@ -344,8 +339,7 @@ body {
 
 .side-nav ul li:hover {
     background: #f1f6ff !important;
-    color: #4a4949;
-
+    color: #4a4949
 }
 
 .side-nav ul li.profile {
@@ -370,7 +364,7 @@ body {
 i.menu-arrow {
     margin-left: auto;
     margin-right: 0;
-    color: #404852;
+    color: #404852
 }
 
 .side-nav ul li.dropdown-btn:hover {
@@ -446,11 +440,9 @@ i.menu-arrow {
     height: 0
 }
 
-
 .main-panel {
     width: calc(100% - 255px);
-    background-color: #f6f8fa;
-    padding: 24px 27.2px
+    background-color: #f6f8fa
 }
 
 .row {
@@ -473,11 +465,18 @@ i.menu-arrow {
     position: relative
 }
 
-.col-12 {
+.col-12,
+.col-1,
+.col-2,
+.col-4,
+.col-9 {
     width: 100%;
     max-width: 100%;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 10px
+}
+
+.grid-margin {
     margin-bottom: 20px
 }
 
@@ -646,13 +645,20 @@ td {
     white-space: nowrap;
     vertical-align: middle;
     border: 1px solid transparent;
-    transition: .15s 
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
 .btn-outline-success {
     color: #08d419;
     background-color: transparent;
     background-image: none;
+    border-color: #08d419
+}
+
+.btn-outline-success:active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(8, 212, 25, .5);
+    color: #fff;
+    background-color: #08d419;
     border-color: #08d419
 }
 
@@ -666,6 +672,13 @@ td {
     color: #ff0017;
     background-color: transparent;
     background-image: none;
+    border-color: #ff0017
+}
+
+.btn-outline-danger:active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 23, .5);
+    color: #fff;
+    background-color: #ff0017;
     border-color: #ff0017
 }
 
@@ -683,6 +696,134 @@ a {
     padding-bottom: .5rem !important;
     margin-top: 1rem !important;
     border-bottom: 1px solid #f3f3f3 !important;
+    display: flex;
+    flex-direction: row
+}
+
+.ticket-card:last-child {
+    border-bottom: none !important
+}
+
+.col-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%
+}
+
+.col-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%
+}
+
+.col-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%
+}
+
+.ticket-action {
+    display: inline-flex
+}
+
+.ticket-avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50% !important;
+    vertical-align: middle
+}
+
+.ticket-btn {
+    font-size: .875rem;
+    cursor: pointer;
+    color: #ffffff;
+    flex: 0 1 auto;
+    padding: .5rem .81rem;
+    margin: 0;
+    line-height: 1;
+    border-radius: .1875rem;
+    background-color: #58d8a3;
+    border-color: #58d8a3;
+    border: 1px solid transparent;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: none
+}
+
+.ticket-btn:active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(88, 216, 163, .5);
+    color: #212529;
+    background-color: #30cd8c;
+    border-color: #2dc385
+}
+
+.ticket-btn:hover {
+    background-color: #39d192;
+    border-color: #30cd8c
+}
+
+.flex-div {
+    display: flex !important
+}
+
+.primary-text {
+    color: #1991eb !important;
+    white-space: nowrap;
+    font-weight: 700 !important;
+    margin-right: .5rem !important
+}
+
+p {
+    font-size: .88rem;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+    margin-right: .25rem !important
+}
+
+.font-weight-bold {
+    max-width: 95%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 700 !important
+}
+
+.gray-text {
+    color: #8c8c8c;
+    font-size: .875rem !important;
+    margin-bottom: 1rem
+}
+
+.text-muted {
+    color: #c2c2c2 !important
+}
+
+.mr-2 {
+    margin-right: .5rem;
+}
+
+.content-wrapper {
+    background: #f6f8fa;
+    padding: 1.5rem 1.7rem;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.footer {
+    background: #f8fa;
+    padding: 20px 1rem;
+    border-top: 1px solid #f3f3f3 !important;
+    font-size: 0.825rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -724,7 +865,7 @@ a {
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .card {
         flex: 0 0 100%;
         max-width: 100%;

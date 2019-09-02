@@ -155,217 +155,380 @@
         </nav>
 
         <div class="main-panel">
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-content">
-                            <div class="card-icon color-danger">
-                                <i class="fas fa-cube fa-fw"></i>
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-icon color-danger">
+                                    <i class="fas fa-cube fa-fw"></i>
+                                </div>
+                                <div class="card-info">
+                                    <p>Total Revenue</p>
+                                    <h3>$65,650</h3>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <p>Total Revenue</p>
-                                <h3>$65,650</h3>
+                            <div class="card-muted-text">
+                                <i class="fas fa-info-circle fa-fw"></i> 65% lower growth
                             </div>
-                        </div>
-                        <div class="card-muted-text">
-                            <i class="fas fa-info-circle fa-fw"></i> 65% lower growth
                         </div>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-content">
-                            <div class="card-icon color-warning">
-                                <i class="fas fa-list-alt fa-fw"></i>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-icon color-warning">
+                                    <i class="fas fa-list-alt fa-fw"></i>
+                                </div>
+                                <div class="card-info">
+                                    <p>Orders</p>
+                                    <h3>3455</h3>
+                                </div>
                             </div>
-                            <div class="card-info">
-                                <p>Orders</p>
-                                <h3>3455</h3>
+                            <div class="card-muted-text">
+                                <i class="far fa-bookmark fa-fw"></i> Product-wise sales
                             </div>
                         </div>
-                        <div class="card-muted-text">
-                            <i class="far fa-bookmark fa-fw"></i> Product-wise sales
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-icon color-success">
+                                    <i class="fas fa-chart-bar fa-fw"></i>
+                                </div>
+                                <div class="card-info">
+                                    <p>Sales</p>
+                                    <h3>5693</h3>
+                                </div>
+                            </div>
+                            <div class="card-muted-text">
+                                <i class="fas fa-calendar-day fa-fw"></i> Weekly Sales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-icon color-info">
+                                    <i class="fas fa-id-badge fa-fw"></i>
+                                </div>
+                                <div class="card-info">
+                                    <p>Employees</p>
+                                    <h3>246</h3>
+                                </div>
+                            </div>
+                            <div class="card-muted-text">
+                                <i class="fas fa-redo-alt fa-fw"></i> Product-wise sales
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-content">
-                            <div class="card-icon color-success">
-                                <i class="fas fa-chart-bar fa-fw"></i>
-                            </div>
-                            <div class="card-info">
-                                <p>Sales</p>
-                                <h3>5693</h3>
-                            </div>
+                <div class="row">
+                    <diV class="col-12 grid-margin">
+                        <div class="card-body">
+                            <h5>Orders</h5>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order No</th>
+                                        <th>Product Name</th>
+                                        <th>Purchased On</th>
+                                        <th>Shipping Status</th>
+                                        <th>Payment Method</th>
+                                        <th>Payment Status</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>034</td>
+                                        <td>Iphone7</td>
+                                        <td>12 May 2017</td>
+                                        <td>Dispatched</td>
+                                        <td>Credit card</td>
+                                        <td>
+                                            <label class="table-badge badge-teal">Approved</label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-success">
+                                                View Order
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-danger">
+                                                Cancel
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>035</td>
+                                        <td>Galaxy S8</td>
+                                        <td>15 May 2017</td>
+                                        <td>Dispatched</td>
+                                        <td>Internet banking</td>
+                                        <td>
+                                            <label class="table-badge badge-warning">Pending</label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-success">
+                                                View Order
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-danger">
+                                                Cancel
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>036</td>
+                                        <td>Amazon Echo</td>
+                                        <td>17 May 2017</td>
+                                        <td>Dispatched</td>
+                                        <td>Credit card</td>
+                                        <td>
+                                            <label class="table-badge badge-teal">Approved</label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-success">
+                                                View Order
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-danger">
+                                                Cancel
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>037</td>
+                                        <td>Google Pixel</td>
+                                        <td>17 May 2017</td>
+                                        <td>Dispatched</td>
+                                        <td>Cash on delivery</td>
+                                        <td>
+                                            <label class="table-badge badge-danger">Rejected</label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-success">
+                                                View Order
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-danger">
+                                                Cancel
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>038</td>
+                                        <td>Mac Mini</td>
+                                        <td>19 May 2017</td>
+                                        <td>Dispatched</td>
+                                        <td>Debit card</td>
+                                        <td>
+                                            <label class="table-badge badge-teal">Approved</label>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-success">
+                                                View Order
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-danger">
+                                                Cancel
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="card-muted-text">
-                            <i class="fas fa-calendar-day fa-fw"></i> Weekly Sales
-                        </div>
-                    </div>
+                    </diV>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-body">
+                            <h5>Manage Tickets</h5>
+                            <div class="fluid-container">
+                                <div class="row ticket-card">
+                                    <div class="col-1">
+                                        <img src="avatar.png" alt="ticket-avatar" class="ticket-avatar" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="flex-div">
+                                            <p class="primary-text">James :</p>
+                                            <p class="font-weight-medium">[#23047]</p>
+                                            <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                        <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Illum
+                                            sequi a, nostrum.</p>
+                                        <div class="row flex-div text-muted">
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Last responded :</p>
+                                                <p class="mr-2">3 hours ago</p>
+                                            </div>
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Due in :</p>
+                                                <p class="mr-2">2 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 ticket-action">
+                                        <div>
+                                            <button type="button" class="ticket-btn">Manage <i
+                                                    class="fas fa-sort-down fa-fw"></i></button>
+                                        </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-content">
-                            <div class="card-icon color-info">
-                                <i class="fas fa-id-badge fa-fw"></i>
-                            </div>
-                            <div class="card-info">
-                                <p>Employees</p>
-                                <h3>246</h3>
-                            </div>
-                        </div>
-                        <div class="card-muted-text">
-                            <i class="fas fa-redo-alt fa-fw"></i> Product-wise sales
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <diV class="col-12">
-                    <div class="card-body">
-                        <h5>Orders</h5>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Order No</th>
-                                    <th>Product Name</th>
-                                    <th>Purchased On</th>
-                                    <th>Shipping Status</th>
-                                    <th>Payment Method</th>
-                                    <th>Payment Status</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>034</td>
-                                    <td>Iphone7</td>
-                                    <td>12 May 2017</td>
-                                    <td>Dispatched</td>
-                                    <td>Credit card</td>
-                                    <td>
-                                        <label class="table-badge badge-teal">Approved</label>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-success">
-                                            View Order
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-danger">
-                                            Cancel
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>035</td>
-                                    <td>Galaxy S8</td>
-                                    <td>15 May 2017</td>
-                                    <td>Dispatched</td>
-                                    <td>Internet banking</td>
-                                    <td>
-                                        <label class="table-badge badge-warning">Pending</label>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-success">
-                                            View Order
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-danger">
-                                            Cancel
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>036</td>
-                                    <td>Amazon Echo</td>
-                                    <td>17 May 2017</td>
-                                    <td>Dispatched</td>
-                                    <td>Credit card</td>
-                                    <td>
-                                        <label class="table-badge badge-teal">Approved</label>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-success">
-                                            View Order
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-danger">
-                                            Cancel
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>037</td>
-                                    <td>Google Pixel</td>
-                                    <td>17 May 2017</td>
-                                    <td>Dispatched</td>
-                                    <td>Cash on delivery</td>
-                                    <td>
-                                        <label class="table-badge badge-danger">Rejected</label>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-success">
-                                            View Order
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-danger">
-                                            Cancel
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>038</td>
-                                    <td>Mac Mini</td>
-                                    <td>19 May 2017</td>
-                                    <td>Dispatched</td>
-                                    <td>Debit card</td>
-                                    <td>
-                                        <label class="table-badge badge-teal">Approved</label>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-success">
-                                            View Order
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-outline-danger">
-                                            Cancel
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </diV>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <divc class="card-body">
-                        <h5>Manage Tickets</h5>
-                        <div class="fluid-container">
-                            <div class="row ticket-card">
+                                    </div>
+                                </div>
+                                <div class="row ticket-card">
+                                    <div class="col-1">
+                                        <img src="avatar.png" alt="ticket-avatar" class="ticket-avatar" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="flex-div">
+                                            <p class="primary-text">Stella :</p>
+                                            <p class="font-weight-medium">[#23047]</p>
+                                            <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                        <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Illum
+                                            sequi a, nostrum.</p>
+                                        <div class="row flex-div text-muted">
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Last responded :</p>
+                                                <p class="mr-2">3 hours ago</p>
+                                            </div>
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Due in :</p>
+                                                <p class="mr-2">2 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 ticket-action">
+                                        <div>
+                                            <button type="button" class="ticket-btn">Manage <i
+                                                    class="fas fa-sort-down fa-fw"></i></button>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <div class="row ticket-card">
+                                    <div class="col-1">
+                                        <img src="avatar.png" alt="ticket-avatar" class="ticket-avatar" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="flex-div">
+                                            <p class="primary-text">John Doe :</p>
+                                            <p class="font-weight-medium">[#23047]</p>
+                                            <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                        <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Illum
+                                            sequi a, nostrum.</p>
+                                        <div class="row flex-div text-muted">
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Last responded :</p>
+                                                <p class="mr-2">3 hours ago</p>
+                                            </div>
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Due in :</p>
+                                                <p class="mr-2">2 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 ticket-action">
+                                        <div>
+                                            <button type="button" class="ticket-btn">Manage <i
+                                                    class="fas fa-sort-down fa-fw"></i></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row ticket-card">
+                                    <div class="col-1">
+                                        <img src="avatar.png" alt="ticket-avatar" class="ticket-avatar" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="flex-div">
+                                            <p class="primary-text">Marques Brownlee : :</p>
+                                            <p class="font-weight-medium">[#23047]</p>
+                                            <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                        <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Illum
+                                            sequi a, nostrum.</p>
+                                        <div class="row flex-div text-muted">
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Last responded :</p>
+                                                <p class="mr-2">3 hours ago</p>
+                                            </div>
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Due in :</p>
+                                                <p class="mr-2">2 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 ticket-action">
+                                        <div>
+                                            <button type="button" class="ticket-btn">Manage <i
+                                                    class="fas fa-sort-down fa-fw"></i></button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row ticket-card">
+                                    <div class="col-1">
+                                        <img src="avatar.png" alt="ticket-avatar" class="ticket-avatar" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="flex-div">
+                                            <p class="primary-text">Marina John :</p>
+                                            <p class="font-weight-medium">[#23047]</p>
+                                            <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                        <p class="gray-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Illum
+                                            sequi a, nostrum.</p>
+                                        <div class="row flex-div text-muted">
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Last responded :</p>
+                                                <p class="mr-2">3 hours ago</p>
+                                            </div>
+                                            <div class="col-4 flex-div">
+                                                <p class="mr-2">Due in :</p>
+                                                <p class="mr-2">2 Days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 ticket-action">
+                                        <div>
+                                            <button type="button" class="ticket-btn">Manage <i
+                                                    class="fas fa-sort-down fa-fw"></i></button>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <footer class="footer">
+                <div class="footer-container">
+
+                </div>
+            </footer>
         </div>
     </div>
 
     <script src="index.js"></script>
-
 </body>
 
 </html>
