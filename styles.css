@@ -12,6 +12,10 @@ body {
     font-size: 16px
 }
 
+div {
+    display: block
+}
+
 .nav {
     width: 100%;
     height: 60px;
@@ -487,6 +491,7 @@ i.menu-arrow {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 
 .card-content {
@@ -494,15 +499,21 @@ i.menu-arrow {
     position: relative;
 }
 
-.card-content .card-icon {
-    float: left;
+.card-content::after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+.card-icon {
+    float: left !important;
     font-size: 36px;
-    height: 100%;
+    /* height: 100%;
     display: flex;
     align-items: center;
     position: absolute;
     left: 0;
-    top: 0
+    top: 0 */
 }
 
 .card-icon i {
@@ -526,7 +537,7 @@ i.menu-arrow {
     color: #ff0017
 }
 
-.card-content .card-info {
+.card-info {
     float: right !important;
     text-align: right;
     color: #212529
@@ -697,6 +708,11 @@ a {
     text-decoration: none
 }
 
+.fluid-container {
+    width: 100%;
+    overflow-x: auto
+}
+
 .ticket-card {
     padding-bottom: .5rem !important;
     margin-top: 1rem !important;
@@ -837,11 +853,15 @@ p {
     padding-right: 10px;
     padding-left: 10px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    display: flex;
+    flex-direction: row
 }
 
-.footer-float-left {
+.footer-left {
     display: block;
+    width: 100%;
+    text-align: left;
     color: #c2c2c2 !important
 }
 
@@ -857,13 +877,13 @@ p {
     text-decoration: underline
 }
 
-.footer-float-right {
+.footer-right {
     display: block;
-    text-align: center !important;
-    float: right
+    width: 50%;
+    text-align: right
 }
 
-.footer-float-right i {
+.footer-right i {
     color: #ff0017 !important
 }
 
@@ -910,5 +930,20 @@ p {
     .card {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column
+    }
+
+    .footer-left {
+        width: 100%;
+        text-align: center
+    }
+
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-top: .25rem !important
     }
 }
