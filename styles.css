@@ -558,6 +558,11 @@ i.menu-arrow {
     font-weight: bold
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto
+}
+
 .card-body table {
     width: 100%;
     max-width: 100%;
@@ -820,10 +825,46 @@ p {
 }
 
 .footer {
-    background: #f8fa;
+    display: block;
+    background: #f6f8fa;
     padding: 20px 1rem;
     border-top: 1px solid #f3f3f3 !important;
-    font-size: 0.825rem;
+    font-size: 0.825rem
+}
+
+.footer-container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.footer-float-left {
+    display: block;
+    color: #c2c2c2 !important
+}
+
+.footer a {
+    color: #08d419;
+    font-size: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+.footer a:hover {
+    text-decoration: underline
+}
+
+.footer-float-right {
+    display: block;
+    text-align: center !important;
+    float: right
+}
+
+.footer-float-right i {
+    color: #ff0017 !important
 }
 
 @media screen and (max-width: 992px) {
